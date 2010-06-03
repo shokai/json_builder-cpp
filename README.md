@@ -32,7 +32,7 @@ Use
 ---
 
     #include <boost/any.hpp>
-    #include "../json_builder.h"
+    #include "json_builder.h"
 
     std::map<string,boost::any> user;
     user["name"] = std::string("shokai");
