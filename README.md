@@ -28,6 +28,29 @@ Install Dependencies
     % sudo apt-get install libboost-dev libboost-regex-dev
 
 
+Use
+---
+
+    #include <boost/any.hpp>
+    #include "../json_builder.h"
+
+    std::map<string,boost::any> user;
+    user["name"] = std::string("shokai");
+    user["fullname"] = std::string("sho hashimoto");
+    user["age"] = 25;
+    user["minus"] = -888;
+    user["test"] = 1.23;
+    user["null"] = json_builder::null;
+    user["true"] = true;
+    user["false"] = false;
+  
+    string json = json_builder::toJson(user);
+    cout << json << endl;
+
+output
+    {"age":25,"false":false,"fullname":"sho hashimoto","minus":-888,"name":"shokai","null":null,"test":1.23,"true":true}  
+
+
 Run Samples
 -----------
 
