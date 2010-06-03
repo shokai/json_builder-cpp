@@ -1,0 +1,11 @@
+# Makefile for Ubuntu 8.04
+INCPATH=/usr/include
+LIBPATH=/usr/lib
+
+INCLUDE=-I$(INCPATH)/boost
+LIBS=$(LIBPATH)/libboost_regex-mt.a
+
+all:
+	g++ -O sample.cpp -o sample $(INCLUDE) $(LIBS)
+	g++ -O nested-array.cpp -o nested-array $(INCLUDE) $(LIBS)
+	g++ -O escape-sequence.cpp -o escape-sequence $(INCLUDE) $(LIBS)
