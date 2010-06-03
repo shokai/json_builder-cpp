@@ -24,14 +24,14 @@ Install Dependencies
 
     # Ubuntu / Debian
     % sudo apt-get install libboost-all-dev
-      or
+    #  or
     % sudo apt-get install libboost-dev libboost-regex-dev
 
 
 Run Samples
 -----------
 
-    % cd samples
+    % cd json_builder-cpp/samples
     % make
     % ./sample
     % ./nested-array
@@ -44,10 +44,9 @@ Run Samples
 Author
 ------
 
-shokai
-    Sho Hashimoto
-    hashimoto@shokai.org
-    http://shokai.org
+Sho Hashimoto (shokai)
+hashimoto@shokai.org
+http://shokai.org
 
 
 

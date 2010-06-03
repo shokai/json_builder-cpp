@@ -32,7 +32,7 @@ int main(int argc, char* argv[]){
   vector<any> vec2;
   vec2.push_back(string("nested std::vector"));
   vec2.push_back(string("bbbbb"));
-  vec.push_back(vec2); // std::vecotrの入れ子
+  vec.push_back(vec2); // nest std::vecotr
 
   obj["params"] = vec;
   string json = json_builder::toJson(obj);
