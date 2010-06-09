@@ -76,7 +76,7 @@ shokai
 
 
 LICENSE
--------
+=======
 
 (The MIT License)
 
