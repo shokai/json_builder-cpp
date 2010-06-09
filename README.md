@@ -1,5 +1,5 @@
 json_builder.h
-======
+==============
 
 Simple JSON Builder for C++.
 Make JSON String from nested std::map and std::vector.
@@ -11,9 +11,9 @@ Dependencies
 * boost::regex
 
 Setup
------
+=====
 
-Clone gyaazz source-code.
+Clone source-code.
 
     %git clone git://github.com/shokai/json_builder-cpp.git
 
@@ -29,7 +29,7 @@ Install Dependencies
 
 
 Use
----
+===
 
     #include <boost/any.hpp>
     #include "json_builder.h"
@@ -52,7 +52,7 @@ output
 
 
 Run Samples
------------
+===========
 
     % cd json_builder-cpp/samples
     % make
@@ -65,11 +65,13 @@ Run Samples
 
 
 Author
-------
+======
 
-Sho Hashimoto (shokai)
-hashimoto@shokai.org
-http://shokai.org
+shokai
+------
+* Sho Hashimoto
+* hashimoto@shokai.org
+* http://shokai.org
 
 
 
