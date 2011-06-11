@@ -1,11 +1,9 @@
-# Makefile for Mac OSX
-INCPATH=/opt/local/include
-LIBPATH=/opt/local/lib
+LIBPATH=/usr/local/lib
 
-INCLUDE=-I$(INCPATH)/boost
+BOOST_INCLUDE=/usr/local/include/boost
 LIBS=$(LIBPATH)/libboost_regex-mt.a
 
 all:
-	g++ -O sample.cpp -o sample $(INCLUDE) $(LIBS)
-	g++ -O nested-array.cpp -o nested-array $(INCLUDE) $(LIBS)
-	g++ -O escape-sequence.cpp -o escape-sequence $(INCLUDE) $(LIBS)
+	g++ -O sample.cpp -o sample.bin -I$(BOOST_INCLUDE) -L$(LIBPATH) $(LIBS)
+	g++ -O nested-array.cpp -o nested-array.bin -I$(BOOST_INCLUDE) -L$(LIBPATH) $(LIBS)
+	g++ -O escape-sequence.cpp -o escape-sequence.bin -I$(BOOST_INCLUDE) -L$(LIBPATH) $(LIBS)

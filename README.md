@@ -20,7 +20,7 @@ Clone source-code.
 Install Dependencies
 
     # Mac OS X
-    % sudo port install boost
+    % brew install boost
 
     # Ubuntu / Debian
     % sudo apt-get install libboost-all-dev
